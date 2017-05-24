@@ -1,0 +1,1 @@
+El archivo clipboard que se encuentra en esta carpeta contiene el código que se sirve para importar la configuracion de nuestro Flow en NodeRed

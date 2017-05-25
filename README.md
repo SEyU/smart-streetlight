@@ -88,3 +88,84 @@ Para más detalle, en este misma entrega del proyecto se adjuntan los códigos d
 
 ![HiveMqTT](IMG/imagen8.png)
 
+
+<h2>VII)Instalación de Node-RED</h2>
+
+La instalación de node-RED es muy sencilla y puede instalarse tanto para Windows como para Linux. Toda la información de los pormenores de la instalación vienen descritos en este enlace: https://nodered.org/docs/getting-started/installation
+Para nuestro proyecto hemos instalado esta herramienta en un equipo Windows de la siguiente manera:
+a)	Abrimos la consola de comandos y escribimos ejecutamos lo siguiente:
+ 	   npm install -g –unsafe-perm node-red
+En algún punto de la instalación puede que se requiera o no la instalación de algún complemento, pero no hay ningún problema, la misma aplicación especificará el comando a utilizar.
+b)	Y para agregarle el complemento de DashBoard debemos ejecutar en el directorio raíz de la aplicación lo siguiente:
+        npm install node-red-dashboard
+		
+		
+
+<h2>VIII)	Recepción, Emisión, Representación y Monitorización de los Datos.</h2>
+
+
+![HiveMqTT](IMG/imagen9.png)
+Vamos a centrarnos en una sola parte de nuestro diagrama para ver de manera general cómo se trabaja en esta plataforma a nivel de recepción, envío y representación de la información.
+
+![HiveMqTT](IMG/imagen10.png)
+
+Vamos a centrarnos en una sola parte de nuestro diagrama para ver de manera general cómo se trabaja en esta plataforma a nivel de recepción, envío y representación de la información.
+![HiveMqTT](IMG/imagen11.png)
+
+![HiveMqTT](IMG/imagen12.png)
+
+El otro nodo con la misma etiqueta “Voltaje del Sensor” es de tipo gráfico. Lo que hace es mostrar a través de un contador con aguja la cantidad que le llega.
+
+![HiveMqTT](IMG/imagen13.png)
+
+![HiveMqTT](IMG/imagen14.png)
+
+![HiveMqTT](IMG/imagen15.png)
+
+Los nodos tipo función tienen la característica de poder asignarle condiciones al parámetro de entrada que le entra y transmitir otro mensaje en la salida o decidir si el mensaje continúa su camino. Se programan en función de lo que nosotros estipulemos. En este caso hemos decidido que si el voltaje es inferior a 1 unidad, significa que el sensor esta inoperativo o inexistente y en consecuencia transmitirá un mensaje a los siguientes nodos.
+![HiveMqTT](IMG/imagen16.png)
+
+![HiveMqTT](IMG/imagen17.png)
+
+Y por último si logra salir el mensaje de emergencia a los siguientes nodos, tendremos por un lado un envío de un mail al técnico de mantenimiento y una alerta de voz en nuestra plataforma que nos redactará el mensaje automáticamente en el idioma que elijamos. Cabe destacar que tendremos que usar una cuenta de correo electrónico de apoyo y autorizar la conexión remota indirecta de nuestro servicio.
+
+![HiveMqTT](IMG/imagen18.png)
+
+![HiveMqTT](IMG/imagen19.png)
+
+![HiveMqTT](IMG/imagen20.png)
+
+![HiveMqTT](IMG/imagen21.png)
+
+
+Finalmente podemos observar que si en un momento dado quitamos algún cable de los que están conectados a nuestro sensor, nos llegará un correo advirtiéndonos de esa incidencia.
+
+![HiveMqTT](IMG/imagen22.png)
+
+Siguiendo prácticamente los mismos pasos hemos hecho pruebas con diferentes gráficas.
+
+![HiveMqTT](IMG/imagen23.png)
+
+![HiveMqTT](IMG/imagen24.png)
+
+![HiveMqTT](IMG/imagen25.png)
+
+Para el envio de información desde nuestra plataforma a nuestro circuito hemos seguido los mismos pasos pero en vez de usar un node de tipo recepción hemos usado uno de tipo emisión. Hemos usado un nodo tipo Slider y un nodo de emisión para enviar los datos.
+
+![HiveMqTT](IMG/imagen26.png)
+![HiveMqTT](IMG/imagen27.png)
+
+
+<h2>IX)	Problemas Encontrados en el Desarrollo del Proyecto</h2>
+
+Realmente todo ha ido sobre ruedas exceptuando algunos puntos en los que nos hemos atrancado más bien debido al desconocimiento en profundidad a nivel físico del dispositivo que a la hora de programar dicho dispositivo. Por ejemplo:
+-	Un error cometido al principio fue conectar nuestro led al pin D0. Lo que no sabíamos era que dicho pin se comparte con la tarjeta de red para la comunicación, por lo que, a la hora de transmitir los datos pertinentes, se enviaban menos de diez mensajes al servidor y después el sistema se bloqueaba. La solución fue simplemente cambiar a otro pin y se acabó el problema
+-	Intentar medir la diferencia de potencial entre las conexiones del LED. No nos dimos cuenta de que eran pines de salida y no de entrada. La solución era desviar con una resistencia dichas conexiones a unos puertos de entrada y a partir de ahí se podría calcular el voltaje de esos dos puntos. No se ha implementado al carecer de la resistencia precisa para dicha acción.
+-	Problemas para conectar a desde la red de la universidad ya que hay puertos que no están operativos. Debemos conectarnos o a la wifi de nuestra casa o compartiendo wifi desde el móvil.
+Si ha habido algún problema más no ha tenido la suficiente relevancia como para plasmarlo en esta memoria.
+
+<h2>X)	Conclusiones Finales</h2>
+
+Este pequeño proyecto nos ha dado pie a plantearnos poder crear muchas más aplicaciones en el campo de IoT, mucho más complejas y de manera realmente sencilla y dinámica. La asignatura brinda un abanico de posibilidades inmensa. No solo nos hemos percatado de esto en el desarrollo de nuestro proyecto, si no que hemos visto el avance en paralelo de los proyectos de los demás grupos de compañeros, que nos han parecido también muy interesantes.
+
+

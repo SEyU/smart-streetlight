@@ -1,6 +1,6 @@
 <h1>Proyecto Farola Inteligente</h1>
 
-Autores: Evelin Flores, Tarik Imlahi Rivas y Mohammed el Boutahiri
+<B>Autores:</B> Evelin Flores, Tarik Imlahi Rivas y Mohammed el Boutahiri
 <h2>I)	Descripción del Proyecto Básico</h2>
 Para la parte de IoT(Internet of Things) se pretende fabricar una “Farola Inteligente” que pueda ser monitorizada y regulada a través de Internet. 
 Dicha farola dispondrá como característica básica el incrementar la intensidad de luz en función del nivel de oscuridad presente en el ambiente, es decir, 

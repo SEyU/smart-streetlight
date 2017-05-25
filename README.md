@@ -37,10 +37,10 @@ Y por otro, utilizaremos los siguientes Software:
 
 <h2>IV)	Diseño del Circuito en Fritzing</h2>
 Los esquemas en Fritzing serían los siguientes:
-![Farola Regulada Manualmente](IMG/imagen1.jpg)
+![Farola Regulada Manualmente](IMG/imagen1.png)
 En este primer circuito solo vamos a necesitar un LED que controlaremos 
 manualmente desde nuestra aplicación a través de internet.
-![Farola Regulada Automaticamente](IMG/imagen2.jpg)
+![Farola Regulada Automaticamente](IMG/imagen2.png)
 En este segundo circuito añadiremos un sensor de luminosidad junto 
 con una resistencia para que se regule la intensidad de la luz del LED automáticamente. Los valores de ese sensor conjunto algunos 
 datos más serán monitorizados a través de nuestra aplicación remota.
@@ -54,8 +54,8 @@ entre sí.
 En este proyecto hemos usado el servidor público que se nos oferta en la página,
 
 
-![HiveMqTT](IMG/imagen3.jpg)
-![HiveMqTT](IMG/imagen4.jpg)
+![HiveMqTT](IMG/imagen3.png)
+![HiveMqTT](IMG/imagen4.png)
 
 
 <h2>VI)	Programación en Arduino</h2>

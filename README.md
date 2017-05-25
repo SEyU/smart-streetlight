@@ -69,5 +69,5 @@ Vamos a mostrar ejemplos de los métodos y trozos de código más relevantes
 que han sido usados para programar los dos circuitos de las dos farolas 
 respectivamente.
 Para más detalle, en este misma entrega del proyecto se adjuntan los códigos de Arduino utilizados.
-<h2>Inclusión de Librerías y Declaración de variables Globales</h2>
+<h3>Inclusión de Librerías y Declaración de variables Globales</h3>
 

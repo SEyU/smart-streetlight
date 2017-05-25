@@ -61,7 +61,7 @@ En este proyecto hemos usado el servidor público que se nos oferta en la págin
 
 
 ![HiveMqTT](IMG/imagen3.png)
-![HiveMqTT](IMG/imagen4.png)
+![HiveMqTT](IMG/imagen3bis.png)
 
 
 <h2>VI)	Programación en Arduino</h2>
@@ -71,20 +71,20 @@ respectivamente.
 Para más detalle, en este misma entrega del proyecto se adjuntan los códigos de Arduino utilizados.
 <h3>Inclusión de Librerías y Declaración de variables Globales</h3>
 
-![HiveMqTT](IMG/imagen5.png)
+![HiveMqTT](IMG/imagen4.png)
 
 <h3>Conexión Wifi</h3>
 
-![HiveMqTT](IMG/imagen6.png)
+![HiveMqTT](IMG/imagen5.png)
 
 <h3>Reconexión al Servicio Mqtt</h3>
 
-![HiveMqTT](IMG/imagen8.png)
+![HiveMqTT](IMG/imagen6.png)
 
-![HiveMqTT](IMG/imagen9.png)
+![HiveMqTT](IMG/imagen7.png)
 
 <h3>Método para la subscripción al servicio Mqtt</h3>
 
 
-![HiveMqTT](IMG/imagen10.png)
+![HiveMqTT](IMG/imagen8.png)
 

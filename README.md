@@ -28,7 +28,9 @@ Por un lado, se necesitan los siguientes materiales para el desarrollo:
 -	2 x Cables MiniUsb-USB.
 -	1 x Sensor de Luminosidad.
 -	1 x ProtoBoard y varios cables macho para conectar pines.
+
 Y por otro, utilizaremos los siguientes Software:
+
 -	Fritzing para el diseño y presentación de nuestro circuito
 -	ARDUINO Versión: v1.8.2 para programar nuestros NodeMCU
 -	Node-RED Versión: v0.16.2 para diseñar e implementar nuestro Dashboard de 
@@ -37,10 +39,14 @@ Y por otro, utilizaremos los siguientes Software:
 
 <h2>IV)	Diseño del Circuito en Fritzing</h2>
 Los esquemas en Fritzing serían los siguientes:
+
 ![Farola Regulada Manualmente](IMG/imagen1.png)
+
 En este primer circuito solo vamos a necesitar un LED que controlaremos 
 manualmente desde nuestra aplicación a través de internet.
+
 ![Farola Regulada Automaticamente](IMG/imagen2.png)
+
 En este segundo circuito añadiremos un sensor de luminosidad junto 
 con una resistencia para que se regule la intensidad de la luz del LED automáticamente. Los valores de ese sensor conjunto algunos 
 datos más serán monitorizados a través de nuestra aplicación remota.

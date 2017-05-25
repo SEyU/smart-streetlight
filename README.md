@@ -71,3 +71,20 @@ respectivamente.
 Para más detalle, en este misma entrega del proyecto se adjuntan los códigos de Arduino utilizados.
 <h3>Inclusión de Librerías y Declaración de variables Globales</h3>
 
+![HiveMqTT](IMG/imagen5.png)
+
+<h3>Conexión Wifi</h3>
+
+![HiveMqTT](IMG/imagen6.png)
+
+<h3>Reconexión al Servicio Mqtt</h3>
+
+![HiveMqTT](IMG/imagen8.png)
+
+![HiveMqTT](IMG/imagen9.png)
+
+<h3>Método para la subscripción al servicio Mqtt</h3>
+
+
+![HiveMqTT](IMG/imagen10.png)
+
